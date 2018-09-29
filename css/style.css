@@ -28,22 +28,29 @@ p,h1,h2,h3,h4,h5,h6 {
 	font: 400 42px Playfair, serif;
 	color: rgb(23, 23, 23);
 }
-.ba-first-p::first-letter {
-	font: 400 110px/34px Playfair, serif;
-	padding: 1px 30px 11px 0;
-	float: left;
-	margin-bottom: 5px;
-	margin-top: 34px;
+.ba-article p:first-of-type::first-letter {
+	font: 400 110px/1 Playfair, serif;
+	padding: 0 30px 0 0;
+	float: left;	
 	color: rgb(23, 23, 23);
 }
-.ba-article > p {
+.ba-article p {
 	padding-bottom: 25px;
 	color: rgba(23, 23, 23, 0.7);
 }
-.ba-article-q {
+blockquote {
 	font-size: 28px;
 	margin: 0;
 	color: rgba(23, 23, 23, 0.7);
+	font-style: italic;
+}
+blockquote::before {
+	content: '\201c';
+	font-size: 60px;
+	font-weight: 700;
+	font-family: 'Times New Roman', serif;
+	color: rgb(23, 23, 23);
+	margin-right: 20px;
 }
 .ba-article-button {
 	margin-top: 39px;
@@ -56,10 +63,7 @@ p,h1,h2,h3,h4,h5,h6 {
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
 }
-.ba-big-q {
-	font-size: 65px;
-	font-weight: 700;
-	font-family: 'Times New Roman', serif;
-	color: rgb(23, 23, 23);
-	padding-right: 50px;
+.ba-article-button:hover {
+	background-color: #eaa258;
+	color: #fff;
 }
